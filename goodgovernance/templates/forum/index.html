@@ -1,0 +1,30 @@
+
+
+<p>This is Good Governance app.</p>
+
+
+<table style="width:1200px" bgcolor="#F7F78D" border="1">
+<tr>
+  <td>Id</td>
+  <td>Constituency</td>
+  <td>Candidate</td> 
+  <td>Party</td>   
+</tr>
+
+
+{% if const_list %}
+    <ul>
+    {% for const in const_list %}
+        <tr>
+        <td>{{const.id}}</td>
+  			<td>{{const.name}}</td>
+  			<td>{{const.candidate}}</td>   
+        <td>{{const.party}}</td>          
+		</tr>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No details are available.</p>
+{% endif %}
+
+</table>
