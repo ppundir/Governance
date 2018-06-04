@@ -17,7 +17,7 @@ TEMPLATE_DIRS = ['/home/pawan/Django_test/goodgovernance/goodgovernance/template
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '62y*@8wmc5mx$1-e3^^w8jq!#*0w$rao*8-rs^f-vblyyqbtr1'
+SECRET_KEY = ENV['secret']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
